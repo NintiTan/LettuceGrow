@@ -1,0 +1,332 @@
+@font-face {
+    font-family: 'montserrat-thin' ;
+    src: url('../fonts/montserrat/Montserrat-Thin.ttf')
+}
+@font-face {
+    font-family: 'montserrat-extralight' ;
+    src: url('../fonts/montserrat/Montserrat-ExtraLight.ttf')
+}
+@font-face {
+    font-family: 'montserrat-light' ;
+    src: url('../fonts/montserrat/Montserrat-Light.ttf')
+}
+@font-face {
+    font-family: 'montserrat-medium' ;
+    src: url('../fonts/montserrat/Montserrat-Medium.ttf')
+}
+@font-face {
+    font-family: 'montserrat-semibold' ;
+    src: url('../fonts/montserrat/Montserrat-SemiBold.ttf')
+}
+@font-face {
+    font-family: 'montserrat-bold' ;
+    src: url('../fonts/montserrat/Montserrat-Bold.ttf')
+}
+@font-face {
+    font-family: 'montserrat-extrabold' ;
+    src: url('../fonts/montserrat/Montserrat-ExtraBold.ttf')
+}
+@font-face {
+    font-family: 'montserrat-black' ;
+    src: url('../fonts/montserrat/Montserrat-Black.ttf')
+}
+
+/* Algemene css */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+h1 {
+    font-family: montserrat-bold;
+    color: black;
+    font-size: 1.75em;
+    line-height: 135%;
+}
+
+h2 {
+    font-family: montserrat-semibold;
+    font-size: 0.7em;
+    
+}
+
+p {
+    font-family: montserrat-light;
+    font-size: 0.65em;
+}
+
+p strong {
+    font-family: montserrat-medium;
+}
+
+main a {
+    font-family: montserrat-medium;
+    font-size: 1em;
+}
+
+header a {
+    font-family: montserrat-light;
+    font-size: 0.6em;
+}
+
+body main {
+    margin: 5% 5% 0% 5%;
+    padding-bottom: 1.8em;
+}
+
+/* navigatie */
+
+header nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:#3C8441;
+    color: #fff;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.3em;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.6em;
+}
+
+
+/* header */
+
+body header {
+    background-color:#3C8441;
+    padding: 0.6em 0em 0.4em 0em;
+    display: flex;
+    justify-content: center;
+}
+
+body header a img {
+    width: 5em;
+}
+
+body header img:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+/* opmaak alle button elementen */
+
+body button {
+    background: #316732;
+    border-radius: 0.2em;
+    border: none;
+    padding: 0;
+    display: flex;
+}
+
+body main button a {
+    display: block;
+    padding: 0.8em 2em;
+    text-decoration: none;
+    border-radius: 0.2em;
+    background:#3C8441;
+    color: white;
+    transform: translateY(-0.3em);
+}
+
+body main button a {
+    will-change: transform;
+    transition: transform 250ms;
+  }
+
+body main button:hover a {
+    transform: translateY(-0.45em);
+  }
+    
+body main button:active a {
+    transform: translateY(-0.3em);
+}
+
+  /* landingspagina */
+
+body.landingspagina main h1 {
+    margin-top: 10%;
+    text-align: center;
+}
+
+body.landingspagina main > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+body.landingspagina main div:first-of-type div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 25%;
+    gap: 1.5em;
+    margin-right: 5%;
+}
+
+body.landingspagina main div:first-of-type div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 30%;
+    gap: 1.5em;
+    text-align: right;
+}
+
+.cls-1 {
+    fill: #74a56a;
+  }
+
+  .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+    stroke-width: 0px;
+  }
+
+  .cls-2 {
+    fill: #4f8348;
+  }
+
+  .cls-3 {
+    fill: #1d1d1b;
+  }
+
+  .cls-4 {
+    fill: #3f6538;
+  }
+
+  .cls-5 {
+    fill: #d0cfcf;
+  }
+/* animatie paal */
+
+@keyframes schud {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-0.2em); }
+    20%, 40%, 60%, 80% { transform: translateX(0.2em); }
+}
+  
+  .a_blad, .b_blad, .c_blad {
+    animation: schud 1s linear;
+}
+
+  .a_blad {
+    animation-delay: 2s;
+}
+
+  .b_blad {
+    animation-delay: 5s;
+}
+
+  .c_blad {
+    animation-delay: 7s;
+}
+
+body.landingspagina main div:first-of-type #paal {
+    display: flex;
+    justify-content: center;
+}
+
+body.landingspagina main div:first-of-type #paal {
+    width: 30%;
+}
+
+
+body.landingspagina main > p:first-of-type {
+    text-align: center;
+}
+
+body.landingspagina header nav li:first-of-type {
+    font-weight: 600;
+}
+
+/* Meer informatie knop */
+
+body.landingspagina div:last-of-type {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ons verhaal pagina */
+
+body.onsverhaalpagina main section {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+body.onsverhaalpagina main section {
+    display: flex;
+    flex-direction: column;
+}
+
+body.onsverhaalpagina main div section:first-of-type, main div section:nth-of-type(4) {
+    width: 60%;
+}
+
+body.onsverhaalpagina main img {
+    width: 35%;
+}
+
+
+
+body.onsverhaalpagina div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+body.onsverhaalpagina header nav li:nth-of-type(2) {
+    font-weight: 600;
+}
+
+/* Meer informatie knop */
+
+body.onsverhaalpagina div:last-of-type {
+    display: flex;
+    justify-content: center;
+    margin: 10% 0 10% 0;
+}
+
+/* Zelf aan de slag pagina */
+
+body.aandeslagpagina header nav li:nth-of-type(3) {
+    font-weight: 600;
+}
+
+/* Mijn voortgang pagina */
+
+body.voortgangpagina h1 {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+body.voortgangpagina p:first-of-type, body.voortgangpagina p:nth-of-type(2) {
+    text-align: center;
+}
+
+body.voortgangpagina img {
+    margin: 5% 0 5% 0;
+}
+
+body.voortgangpagina p:last-of-type {
+    margin-bottom: 10%;
+}
+
+body.voortgangpagina header nav li:nth-of-type(4) {
+    font-weight: 600;
+}
+
+
+
+

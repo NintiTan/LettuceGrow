@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Laag_2" data-name="Laag 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.09 48.03">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #74a56a;
+      }
+
+      .cls-3 {
+        fill: #3f6538;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g id="Landingspagina_" data-name="Landingspagina\">
+    <g>
+      <polygon class="cls-3" points="46.19 18.88 46.19 .95 5.38 2.25 5.38 18.88 46.19 18.88"/>
+      <polygon class="cls-2" points="45.09 18.46 6.8 19.3 6.8 43.32 45.09 43.32 45.09 18.46"/>
+      <polygon class="cls-4" points="31.69 24.9 20.2 23.82 20.2 18.46 32.32 19.3 31.69 24.9"/>
+      <g>
+        <path class="cls-1" d="m45.09,3v14.29H6.8V3h38.29m0-3H6.8c-1.66,0-3,1.34-3,3v14.29c0,1.66,1.34,3,3,3h38.29c1.66,0,3-1.34,3-3V3c0-1.66-1.34-3-3-3h0Z"/>
+        <path class="cls-1" d="m43.71,20.35l.05,21.69H8.18l-.05-21.69h35.58m0-3H8.13c-.8,0-1.56.32-2.12.88-.56.56-.88,1.33-.88,2.13l.05,21.69c0,1.65,1.35,2.99,3,2.99h35.58c.8,0,1.56-.32,2.12-.88.56-.56.88-1.33.88-2.13l-.05-21.69c0-1.65-1.35-2.99-3-2.99h0Z"/>
+        <polyline class="cls-5" points="20.2 19.58 20.2 23.82 31.69 23.82 31.69 19.3"/>
+      </g>
+      <polygon class="cls-1" points="5.38 2.25 0 7.18 1.2 48.03 40.84 48.03 43.08 43.69 6.8 43.32 6.8 19.3 5.12 15.11 5.38 2.25"/>
+    </g>
+  </g>
+</svg>
