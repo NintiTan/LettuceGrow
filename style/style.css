@@ -325,6 +325,44 @@ body.aandeslagpagina header nav li:nth-of-type(3) {
     font-weight: 600;
 }
 
+body.aandeslagpagina main h1 {
+    text-align: center;
+}
+
+body.aandeslagpagina main > p {
+    text-align: center;
+    margin-top: 5%;
+}
+
+body.aandeslagpagina main div {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+body.aandeslagpagina main > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+body.aandeslagpagina main div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+body.aandeslagpagina main div > img {
+    width: 30%;
+}
+
+body.aandeslagpagina main div > div {
+    width: 60%;
+}
+
+
+
 /* Mijn voortgang pagina */
 
 body.voortgangpagina main {
