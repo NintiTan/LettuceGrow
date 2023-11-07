@@ -48,13 +48,13 @@ h1 {
 
 h2 {
     font-family: montserrat-semibold;
-    font-size: 0.7em;
+    font-size: 0.8em;
     
 }
 
 p {
     font-family: montserrat-light;
-    font-size: 0.65em;
+    font-size: 0.7em;
 }
 
 p strong {
@@ -85,6 +85,7 @@ header nav {
     width: 100%;
     background-color:#3C8441;
     color: #fff;
+    z-index: 9;
 }
 
 header nav ul {
@@ -111,7 +112,7 @@ body header {
 }
 
 body header a img {
-    width: 5em;
+    width: 7em;
 }
 
 body header img:hover {
@@ -220,16 +221,36 @@ body.landingspagina main div:first-of-type div:nth-of-type(2) {
     animation: schud 1s linear;
 }
 
-  .a_blad {
-    animation-delay: 2s;
+#c_blad1 {
+    animation-delay: 1s;
 }
 
-  .b_blad {
+#c_blad2 {
+    animation-delay: 6s;
+}
+
+#c_blad3 {
+    animation-delay: 12s;
+}
+
+#b_blad1 {
     animation-delay: 5s;
 }
 
-  .c_blad {
+#b_blad2 {
+    animation-delay: 11s;
+}
+
+#b_blad3 {
     animation-delay: 7s;
+}
+
+#a_blad1 {
+    animation-delay: 3s;
+}
+
+#a_blad2 {
+    animation-delay: 9s;
 }
 
 body.landingspagina main div:first-of-type #paal {
@@ -306,27 +327,31 @@ body.aandeslagpagina header nav li:nth-of-type(3) {
 
 /* Mijn voortgang pagina */
 
+body.voortgangpagina main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+  }
+
 body.voortgangpagina h1 {
     text-align: center;
-    margin-bottom: 5%;
 }
 
-body.voortgangpagina p:first-of-type, body.voortgangpagina p:nth-of-type(2) {
-    text-align: center;
-}
+body.voortgangpagina main img {
+    width: 17.5em;
+    margin-top: 10%;
+    margin-bottom: 10%;
 
-body.voortgangpagina img {
-    margin: 5% 0 5% 0;
 }
 
 body.voortgangpagina p:last-of-type {
     margin-bottom: 10%;
+    text-align: center;
 }
 
 body.voortgangpagina header nav li:nth-of-type(4) {
     font-weight: 600;
 }
-
-
 
 
