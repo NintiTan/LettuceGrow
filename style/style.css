@@ -1,22 +1,22 @@
 @font-face {
     font-family: 'montserrat-thin' ;
-    src: url('../fonts/montserrat/Montserrat-Thin.ttf')
+    src: url('../fonts/montserrat/Montserrat-Thin.ttf');
 }
 @font-face {
     font-family: 'montserrat-extralight' ;
-    src: url('../fonts/montserrat/Montserrat-ExtraLight.ttf')
+    src: url('../fonts/montserrat/Montserrat-ExtraLight.ttf');
 }
 @font-face {
     font-family: 'montserrat-light' ;
-    src: url('../fonts/montserrat/Montserrat-Light.ttf')
+    src: url('../fonts/montserrat/Montserrat-Light.ttf');
 }
 @font-face {
     font-family: 'montserrat-medium' ;
-    src: url('../fonts/montserrat/Montserrat-Medium.ttf')
+    src: url('../fonts/montserrat/Montserrat-Medium.ttf');
 }
 @font-face {
     font-family: 'montserrat-semibold' ;
-    src: url('../fonts/montserrat/Montserrat-SemiBold.ttf')
+    src: url('../fonts/montserrat/Montserrat-SemiBold.ttf');
 }
 @font-face {
     font-family: 'montserrat-bold' ;
@@ -24,11 +24,15 @@
 }
 @font-face {
     font-family: 'montserrat-extrabold' ;
-    src: url('../fonts/montserrat/Montserrat-ExtraBold.ttf')
+    src: url('../fonts/montserrat/Montserrat-ExtraBold.ttf');
 }
 @font-face {
     font-family: 'montserrat-black' ;
-    src: url('../fonts/montserrat/Montserrat-Black.ttf')
+    src: url('../fonts/montserrat/Montserrat-Black.ttf');
+}
+@font-face {
+    font-family: 'shadowhand';
+    src: url('../fonts/shadowhand/ShadowHand.ttf');
 }
 
 /* Algemene css */
@@ -40,10 +44,9 @@
 
 
 h1 {
-    font-family: montserrat-bold;
+    font-family: shadowhand;
     color: black;
-    font-size: 1.75em;
-    line-height: 135%;
+    font-size: 2.25em;
 }
 
 h2 {
@@ -123,7 +126,6 @@ body header img:hover {
 /* opmaak alle button elementen */
 
 body button {
-    background: #316732;
     border-radius: 0.2em;
     border: none;
     padding: 0;
@@ -132,26 +134,15 @@ body button {
 
 body main button a {
     display: block;
-    padding: 0.8em 2em;
+    padding: 1em 2em 1em 2em;
     text-decoration: none;
     border-radius: 0.2em;
-    background:#3C8441;
+    background: #3C8441;
     color: white;
-    transform: translateY(-0.3em);
 }
 
-body main button a {
-    will-change: transform;
-    transition: transform 250ms;
-  }
 
-body main button:hover a {
-    transform: translateY(-0.45em);
-  }
-    
-body main button:active a {
-    transform: translateY(-0.3em);
-}
+
 
   /* landingspagina */
 
@@ -361,6 +352,12 @@ body.aandeslagpagina main div > div {
     width: 60%;
 }
 
+body.aandeslagpagina main div:first-of-type button, body.aandeslagpagina main div:nth-of-type(2) button, body.aandeslagpagina main div:nth-of-type(3) button {
+    width: 40%;
+}
+
+/* Met onderstaande code over de popup menus heeft mijn vader een beetje geholpen */
+
 #kiesmenu {
     display: none;
     position: fixed;
@@ -394,7 +391,45 @@ body.aandeslagpagina main div > div {
     padding: 1em;
 }
 
+#thanks {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 0.5em 1em 0 rgba(0,0,0,0.2);
+    z-index: 3;
+    width: 70%;
+    animation: sluitmenu 0s 3s forwards;
+}
 
+#thanks:target {
+    display: block;
+}
+
+#thanks p {
+    padding: 2em;
+    text-align: center;
+    
+}
+
+@keyframes sluitmenu {
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
+
+/* tot hier */
+
+body.aandeslagpagina main > p:last-of-type {
+    text-align: center;
+    margin-top: 15%;
+}
+
+body.aandeslagpagina div:last-of-type {
+    display: flex;
+    justify-content: center;
+}
 
 
 /* Mijn voortgang pagina */
@@ -419,6 +454,9 @@ body.voortgangpagina main img {
 
 body.voortgangpagina p:last-of-type {
     margin-bottom: 10%;
+}
+
+body.voortgangpagina p {
     text-align: center;
 }
 
