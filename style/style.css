@@ -1,11 +1,4 @@
-@font-face {
-    font-family: 'montserrat-thin' ;
-    src: url('../fonts/montserrat/Montserrat-Thin.ttf');
-}
-@font-face {
-    font-family: 'montserrat-extralight' ;
-    src: url('../fonts/montserrat/Montserrat-ExtraLight.ttf');
-}
+
 @font-face {
     font-family: 'montserrat-light' ;
     src: url('../fonts/montserrat/Montserrat-Light.ttf');
@@ -18,18 +11,7 @@
     font-family: 'montserrat-semibold' ;
     src: url('../fonts/montserrat/Montserrat-SemiBold.ttf');
 }
-@font-face {
-    font-family: 'montserrat-bold' ;
-    src: url('../fonts/montserrat/Montserrat-Bold.ttf')
-}
-@font-face {
-    font-family: 'montserrat-extrabold' ;
-    src: url('../fonts/montserrat/Montserrat-ExtraBold.ttf');
-}
-@font-face {
-    font-family: 'montserrat-black' ;
-    src: url('../fonts/montserrat/Montserrat-Black.ttf');
-}
+
 @font-face {
     font-family: 'shadowhand';
     src: url('../fonts/shadowhand/ShadowHand.ttf');
